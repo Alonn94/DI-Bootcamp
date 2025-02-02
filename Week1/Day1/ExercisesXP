@@ -1,0 +1,72 @@
+#Exercise 1:
+
+print("Hello World\n" * 5)
+
+#Exercise 2:
+
+print(99^3*8)
+
+#Exercise 3:
+#False
+#True
+#False
+#False
+#True
+
+#Exercise 4
+
+computer_brand=input("What is your computer brand?:")
+print(f"I have a {computer_brand} computer")
+
+#Exercise 5
+
+name= "Alonn"
+age=30
+shoe_size=42
+
+age_alonn=str(age)
+shoe_size_alonn=str(shoe_size)
+
+
+info=name + " has a shoesize of " +shoe_size_alonn + " that is bigger than his age " + age_alonn + "."
+
+print(info)
+
+#Exercise 6
+
+a=5
+b=3
+
+if a>b :
+    print("Hello World")
+
+#Excerise 7 
+
+number=input("Please type in a number:")
+user_number=int(number)
+if user_number%2==0:
+    print("Your number is even!")
+else: print("Your number is odd!")
+
+
+#Exercise 8
+
+user_name= input("What is your name?:")
+if user_name=="Alonn":
+    print("You have a beautiful name just like me!")
+else: print("We are similar but not the same")
+
+#Exercise 9
+
+user_height= input("How tall are you in cm?:")
+user_height_int=int(user_height)
+
+if user_height_int >145:
+    print("You are tall enough to ride!")
+else: print("You need to grow some more to ride")
+
+
+
+
+
+
