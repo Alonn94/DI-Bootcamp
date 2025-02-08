@@ -49,6 +49,8 @@ print(basket)
 #-------Exercise 4 ---------
 
 #Float - float is a number as well, tho showing decimals compared to an integer
+#create list with integers and loafs,
+
 
 #list=[1.5,2,2.5,3,3.5,4,4.5,5]
 
@@ -63,7 +65,7 @@ print(list)
 
 #-------Exercise 5 ---------
 
-#for i in range(1,21,1):
+#for i in range(1,21,1): last number is step1 by default
   #  print(i)
 
 

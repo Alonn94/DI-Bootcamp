@@ -38,6 +38,7 @@ sample_dict = {
 print(sample_dict["class"]["student"]["marks"]["history"])
 
 
+
 #how we can modify an entry
 
 user_info = {"Name":"Alonn",
@@ -104,9 +105,9 @@ Glow = dict(zip(names,power))
 
 print(Glow)
 
-for i in names:
-    if i =="Yuppy":
-        continue
-    print(names)
+# for i in names:
+#     if i =="Yuppy":
+#         continue
+#     print(names)
 
 
