@@ -130,13 +130,11 @@ class Family():
     def family_presentation(self):
             return print(self.members.index)
 
-sim_family=Family("Sims",[
-    {'name':'Michael','age':35,'gender':'Male','is_child':False},
-{'name':'Sarah','age':32,'gender':'Female','is_child':False}])
+sims_family=Family("Sims")
 
+sims_family.born(name="Aloni", age=30)
+sims_family.family_presentation()
 
-# Teddy=Family.born{"Sims",'age':0,'gender':'male','is child':True}
-print(Family.is_18("Sarah"))
 
 class TheIncredibles(Family):
     def __init__(self,last_name,members):
@@ -150,3 +148,5 @@ class TheIncredibles(Family):
                                 raise Exception(f"{name} is child still")
     def family_presentation(self):
            return super().family_presentation()
+    
+
