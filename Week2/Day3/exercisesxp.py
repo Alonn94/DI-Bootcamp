@@ -74,33 +74,35 @@
 ##------------------ Exercise 5
 
 
-# import datetime
+import datetime
 
-# def time_until_ny():
-#     now = datetime.datetime.now()
-#     next_ny = datetime.datetime(now.year +1,1,1)
-#     time_left = next_ny - now
+def time_until_ny():
+    now = datetime.datetime.now()
+    next_ny = datetime.datetime(now.year +1,1,1)
+    time_left = next_ny - now
 
-#     days=time_left.days    #not sure how to call the units 
+    days=time_left.days    #not sure how to call the units 
 
-# print(time_until_ny())
+
+
+print(time_until_ny())
 
 ##------------------ Exercise 6
 
 
-import datetime
+# import datetime
 
-def minutes_lived(birthdate_str):
-    birthdate=datetime.datetime.strptime(birthdate_str, "%Y-%m-%d")
+# def minutes_lived(birthdate_str):
+#     birthdate=datetime.datetime.strptime(birthdate_str, "%Y-%m-%d")
 
-    now = datetime.datetime.now()
+#     now = datetime.datetime.now()
 
-    time_lived=now - birthdate
+#     time_lived=now - birthdate
 
-    minutes = time_lived.total_seconds() / 60
-    print(f"You have lived {minutes} minutes.")
+#     minutes = time_lived.total_seconds() / 60
+#     print(f"You have lived {minutes} minutes.")
 
-minutes_lived("1994-03-27") 
+# minutes_lived("1994-03-27") 
 
 ##------------------ Exercise 7
 
