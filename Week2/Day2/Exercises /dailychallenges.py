@@ -8,3 +8,4 @@ class Pagination:
     def getVisibleItems(self):
 
 #no idea how to to proceed nor how to think about it
+

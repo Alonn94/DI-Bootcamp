@@ -1,0 +1,24 @@
+relational database
+
+they are presented in tables - it is structured
+postgres is only relational =/ mongo database
+most used, well strcutured DB 
+
+postgres is the data base structure 
+PG admin is the interface for the user to use the database (tool)
+
+Table = entails data entries (coloumns and rows)
+the row is related to the col. (x and y)
+field= where data is entered (the title of the database)
+ramesh = is a field of name 
+
+NULL = value is absent 
+
+Types of data:
+
+numeric (small int, dec, serial)
+string (varchar, text)
+date/time datatime
+
+constraint: not null, default value in case data is not put, unique = can not the same date, primary key = not null and unique 
+

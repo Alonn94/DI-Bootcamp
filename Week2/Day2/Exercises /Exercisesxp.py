@@ -132,6 +132,8 @@ class Family():
 
 sims_family=Family("Sims")
 
+##how do i add a memeber into the family, through creating an instance with the class? (without using one of the given function)
+
 sims_family.born(name="Aloni", age=30)
 sims_family.family_presentation()
 
@@ -149,4 +151,5 @@ class TheIncredibles(Family):
     def family_presentation(self):
            return super().family_presentation()
     
+## XXXXXXXXXXXXXXXXXXXXXXXXXX
 
