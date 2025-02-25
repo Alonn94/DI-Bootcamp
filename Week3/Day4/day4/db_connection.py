@@ -5,10 +5,10 @@ import random
 
 
 connection = psycopg2.connect(database='countries', 
-                              user='alonnbarthels',
-                              password = '310103',
+                              user='postgres',
+                              password = '1973',
                               host = 'localhost',
-                              port = '5432')
+                              port = '5433')
 
 cursor = connection.cursor()
 cursor.execute('DROP TABLE IF EXISTS random_countries')
@@ -39,9 +39,9 @@ for i in range(10):
     region = data[index]['region']
     population = data[index]['population']
 
+
     cursor.execute(f'''INSERT INTO random_countries (name, capital, flag_code, region, population)
                    VALUES  ('{name}', '{capital}', '{flag_code}', '{region}', '{population}')''')
 
 connection.commit()
 print('DATA WAS INSERTED SUCESSFULLY')
-
