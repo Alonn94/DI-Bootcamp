@@ -1,0 +1,169 @@
+
+<!-- Exercise1 -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Facts</title>
+    <style>
+        .bold-text {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Some Facts</h1>
+        <h2 id="title-h2">The Chocolate</h2>
+        <h3 id="title-h3">History of the Chocolate</h3>
+        <p>Chocolate is made from tropical Theobroma cacao tree seeds. Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p>After the European discovery of the Americas, chocolate became very popular in the wider world, and its demand exploded.</p>
+        <p>Chocolate has since become a popular food product that millions enjoy every day, thanks to its unique, rich, and sweet taste.</p>
+        <p id="last-paragraph">But what effect does eating chocolate have on our health?</p>
+    </article>
+    
+    <button id="bold-btn">Make Text Bold</button>
+
+    <script>
+//1
+        const h1Element = document.querySelector("h1");
+        console.log(h1Element.textContent);
+
+//2
+        const lastParagraph = document.getElementById("last-paragraph");
+        if (lastParagraph) {
+            lastParagraph.remove();
+        }
+
+//3
+        const h2Element = document.getElementById("title-h2");
+        h2Element.addEventListener("click", function() {
+            h2Element.style.backgroundColor = "red";
+        });
+
+//4
+        const h3Element = document.getElementById("title-h3");
+        h3Element.addEventListener("click", function() {
+            h3Element.style.display = "none";
+        });
+
+//5
+        const boldButton = document.getElementById("bold-btn");
+        boldButton.addEventListener("click", function() {
+
+ -->
+        <!-- -- Exercise2  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="firstname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lastname"><br><br>
+        <input type="submit" value="Submit" id="submit">
+    </form> 
+    <ul class="usersAnswer"></ul>
+
+    <script>
+//1
+        const formElement = document.getElementById("userForm");
+        console.log(formElement);
+
+//2
+        const firstNameInput = document.getElementById("fname");
+        const lastNameInput = document.getElementById("lname");
+        console.log(firstNameInput, lastNameInput);
+
+//3
+        const firstNameByName = document.querySelector("input[name='firstname']");
+        const lastNameByName = document.querySelector("input[name='lastname']");
+        console.log(firstNameByName, lastNameByName);
+
+//4        
+        formElement.addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            
+            const firstNameValue = firstNameInput.value.trim();
+            const lastNameValue = lastNameInput.value.trim();
+            
+            if (firstNameValue !== "" && lastNameValue !== "") {
+                const userAnswerList = document.querySelector(".usersAnswer");
+                
+                const firstLi = document.createElement("li");
+                firstLi.textContent = firstNameValue;
+                
+                const lastLi = document.createElement("li");
+                lastLi.textContent = lastNameValue;
+                
+                userAnswerList.appendChild(firstLi);
+                userAnswerList.appendChild(lastLi);
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+        <!-- -- Exercise3-->
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Transform The Sentence</title>
+            <style>
+                .highlight {
+                    color: blue;
+                }
+            </style>
+        </head>
+        <body>
+            <p id="sentence">
+                <strong>Hello</strong> I hope you are enjoying <strong>this</strong> class. At the
+                <strong>end</strong> you <strong>will</strong> be great Developers!
+                <strong>Enjoy</strong> the <strong>JavaScript</strong> lessons.
+            </p>
+        
+            <script>
+//1
+                let allBoldItems;
+        
+//2
+                function getBoldItems() {
+                    allBoldItems = document.querySelectorAll("p strong");
+                }
+        
+//3
+                function highlight() {
+                    allBoldItems.forEach(item => {
+                        item.classList.add("highlight");
+                    });
+                }
+        
+//4
+                function returnItemsToDefault() {
+                    allBoldItems.forEach(item => {
+                        item.classList.remove("highlight");
+                    });
+                }
+                
+//5
+                const paragraph = document.getElementById("sentence");
+                paragraph.addEventListener("mouseover", highlight);
+                paragraph.addEventListener("mouseout", returnItemsToDefault);
+            </script>
+        </body>
+        </html>
+        
