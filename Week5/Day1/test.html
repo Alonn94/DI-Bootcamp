@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Absence Request Tracker</title>
+</head>
+<body>
+
+    <h2>Leave Absence Request Tracker</h2>
+
+    <form id="leaveForm">
+        <label for="leaveType">Leave Type:</label>
+        <select id="leaveType">
+            <option value="Vacation">Vacation</option>
+            <option value="Sick Leave">Sick Leave</option>
+            <option value="Personal">Personal</option>
+        </select>
+
+        <label for="leaveDays">Number of Days:</label>
+        <input type="number" id="leaveDays" min="1" required>
+
+        <label for="leaveDate">Start Date:</label>
+        <input type="date" id="leaveDate" required>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <h3>Leave Requests</h3>
+
+    <label for="filter">Filter Requests:</label>
+    <select id="filter">
+        <option value="all">All</option>
+        <option value="Vacation">Vacation</option>
+        <option value="Sick Leave">Sick Leave</option>
+        <option value="Personal">Personal</option>
+    </select>
+
+    <ul id="leaveRequests"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
