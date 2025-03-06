@@ -25,9 +25,21 @@ const gameInfo = [
     },
    ];
 
-const username= gameInfo.map(player => player.username +"!");
+// const username= gameInfo.map(player => player.username +"!");
 
-const winners = gameInfo.filter(player => player.score >5);
+
+let usernames=[]
+gameInfo.forEach(user => usernames.push(user.username + "!"))
+
+
+let winners=[]
+gameInfo.forEach(user=>{
+    if (user.score>5){
+        winners.push(user.username)
+    }
+})
+
+// const winners = gameInfo.filter(player => player.score >5);
 winners.map(player=> player.username);
 
 console.log(username)
