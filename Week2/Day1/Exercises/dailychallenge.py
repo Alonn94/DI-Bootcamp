@@ -9,14 +9,22 @@ class Farm():
             else: self.animals[animal] = quantity
             
 
-    def show_inventar(self):
-      for animal,count in self.animals.items():
-              print(f"{animal}{count}")
-
     def get_info(self):
-         print("E-I-E-I-O")
+      inventory= "Farm:"
+      for animal,count in self.animals.items():
+          inventory += f"{animal}:{count}"
+          inventory += "EE-I-E-I-O!"
+      return inventory.strip()
+    
+    def get_animal_types(self):
+        return sorted(self.animals.keys())
 
+    def get_short_info(self):
+        animal_list= self.get_animal_types()
+        return f"{self.name}'s farm has {animal_list}"
+    
 
+    
 macdonald = Farm("McDonald")
 macdonald.add_animal('cow',5)
 macdonald.add_animal('cow',5)
@@ -25,4 +33,3 @@ macdonald.add_animal('sheep')
 macdonald.add_animal('sheep')
 macdonald.add_animal('goat', 12)
 print(macdonald.get_info())
-print(macdonald.show_inventar())
