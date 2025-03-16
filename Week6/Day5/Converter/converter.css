@@ -1,0 +1,46 @@
+
+body {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+
+
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+
+button {
+    background: #feda4a;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d4a417;
+}
+
+
+.hidden {
+    display: none;
+}
