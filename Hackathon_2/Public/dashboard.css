@@ -1,0 +1,159 @@
+/* Reset & base styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(to right, #014a8a, #b0cae5);
+    color: #003d7a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  /* Center all container divs */
+  div {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    color: #004b91;
+    margin-bottom: 30px;
+  }
+  
+  /* Section titles */
+  h2 {
+    margin-top: 20px;
+    color: #005fa3;
+    font-size: 22px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #004a99;
+    font-size: 15px;
+  }
+  
+  /* Overview styling */
+  #total-leave-days,
+  #used-leave-days,
+  #remaining-leave-balance {
+    color: #0077cc;
+    margin-bottom: 10px;
+  }
+  
+  /* Form styling */
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  select,
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4675bc;
+    border-radius: 8px;
+    background-color: #f5faff;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #4675bc;
+    border-radius: 8px;
+    background-color: #f5faff;
+    margin-bottom: 15px;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+
+.new-request-section form input,
+.new-request-section form select {
+  max-width: 300px;
+  margin: 0 auto 15px auto;
+  display: block;
+  text-align: center;
+}
+  
+  #Log-out {
+    margin-top: 20px;
+    max-width: 200px;
+  }
+
+.new-request-section form label {
+    text-align: center;
+    display: block;
+  }
+
+  table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; 
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #0077cc;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff4d4d;
+  }

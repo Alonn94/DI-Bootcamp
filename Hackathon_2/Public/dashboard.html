@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <div>
+        <h1> Welcome! <br>Dashboard </h1>
+        <h2> Overview </h2>
+        <h3> Total leave days:</h3><p id="total-leave-days"></p>
+        <h3> Used leave days:</h3> <p id="used-leave-days"></p>
+        <h3> Remaining leave balance:</h3> <p id="remaining-leave-balance"></p>
+    </div>
+    <div>
+
+        <h2> Current <br> Absence requests</h2>
+        <table id="requests-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Leave Type</th>
+                <th>Date of Request</th>
+                <th>Duration</th>
+                <th>Status</th>
+                <th>🗑️</th>
+            </tr>
+        </thead>
+        <tbody id="requests-body">
+
+        </tbody>
+        </table>
+    </div>
+
+</div>
+
+    <div class="new-request-section">
+        <h2>Submit a New Request</h2>
+        <form id="new-request-form">
+          <label for="new-request-type">Type of Leave:</label>
+          <select id="new-request-type" name="request-type" required>
+            <option value="">-- Select Leave Type --</option>
+            <option value="Vacation">Vacation</option>
+            <option value="Sick">Sick</option>
+            <option value="Personal">Personal</option>
+            <option value="Other">Other</option>
+          </select><br>
+      
+          <label for="request-date">Date of Request:</label>
+          <input type="date" id="new-request-date" required><br>
+          <label for="duration">Duration:</label>
+          <input type="number" id="new-request-duration" min="1" required><br>
+          <label for="reason">Reason:</label>
+          <textarea id="new-request-details" required></textarea><br>
+      
+          <button id="submit-new-request" type="submit">Submit New Request</button>
+        </form>
+      </div>
+
+<button id="Log-out" type="submit">Log-out</button>
+</body>
+</html>
+
+
+

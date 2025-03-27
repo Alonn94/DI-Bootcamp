@@ -1,4 +1,3 @@
-# Define the matrix as a 2D list
 matrix = [
     ['7', 'i', 'i'],
     ['T', 's', 'x'],

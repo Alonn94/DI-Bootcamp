@@ -49,3 +49,5 @@ console.log(winners)
 
 const totalScore = gameInfo.reduce((acc,player) => acc + player.score,0);
 console.log(totalScore); 
+
+

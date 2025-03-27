@@ -1,0 +1,109 @@
+/* Reset & base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(to right, #fcc9ff, #ff8fe9);
+    color: #003d7a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  /* General content box style */
+  div {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  /* Headings */
+  h1 {
+    color: #004b91;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #005fa3;
+    font-size: 22px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #004a99;
+    font-size: 15px;
+  }
+  
+  /* Table Styling */
+  #admin-requests-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #0077cc;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #admin-requests-body tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  
+  .approve-btn,
+  .reject-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    margin: 0 3px;
+  }
+  
+  .approve-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .reject-btn {
+    background-color: #f44336;
+    color: white;
+  }
