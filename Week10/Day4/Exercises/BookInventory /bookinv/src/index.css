@@ -1,0 +1,46 @@
+/* src/styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+
+.genre-buttons button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.genre-buttons button.active {
+  background-color: #3f54cb;
+  color: white;
+}
+
+.book-list {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.book-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: rgb(148, 183, 196);
+  border-radius: 4px;
+}
+
+.book-item h3 {
+  margin-top: 0;
+  color: #2e27a8;
+}
+
+.book-item p {
+  margin: 5px 0;
+  color: #000000;
+}
